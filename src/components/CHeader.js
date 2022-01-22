@@ -1,5 +1,6 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 import logo from '../logo.svg';
+import './CHeader.css';
 
 class CHeader extends Component{
     render(){
