@@ -28,8 +28,9 @@ import React from 'react'
 
 export const CFooter = () => {
     let date = new Date();
-    return React.createElement('div', null, 
-    React.createElement('h5', null, 'PPFront-end, przykładowy serwis React. Dzisiaj mamy: ' +date.toDateString()));
+    return React.createElement('div', {className: 'footerDivClass'}, 
+    React.createElement('h5', {id: 'footerText', className: 'footerTextClass'}, 
+    'PPFront-end, przykładowy serwis React. Dzisiaj mamy: ' +date.toDateString()));
 }
 
 //export default CFooter;
