@@ -5,7 +5,7 @@ import './CHeader.css';
 class CHeader extends Component{
     render(){
         return(
-              <div>
+              <div className="headerContainer">
                   <img src={logo} className="headerLogo" alt="logo"/>
                   <h2>Witaj w przykładowym serwisie</h2>
               </div>
