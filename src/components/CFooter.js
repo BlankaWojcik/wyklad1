@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './CFooter.css';
 
 //function CFooter() {
 //    let date = new Date();
