@@ -18,13 +18,13 @@ export const CFooter = (props) => {
 
     let date = new Date();
     return (
-        <div>
-            <h5>
-                PPFront-end, przykładowy serwis React. Dzisiaj mamy: {date.toDateString()}
-                <br/>
-                Stan pogody: {weather}, temperatura: {temp}.
-                <br/>
-                {children}
+        <div className='footerDivClass'>
+            <h5 className='footerTextClass'>PPFront-end, przykładowy serwis React.  Dzisiaj mamy: {" "}
+            {date.toDateString()}
+            <br/>
+            Stan pogody: {weather}, temperatura: {temp}.
+            <br/>
+            {children}
             </h5>
         </div>
     );

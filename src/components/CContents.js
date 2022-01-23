@@ -11,7 +11,7 @@ class CContents extends Component{
         this.state= {msg: 'Witaj użytkowniku. Kliknij przycisk, aby poznać wiadomość'}
         this.txtData = () => JSON.parse(JSON.stringify(jsonData));
         this.txtData2 = () => JSON.parse(JSON.stringify(jsonData2));
-        const imgContext = require.context('../res/', false, /\.png$/);
+        const imgContext = require.context('../res/', false, /\.jpg$/);
         let img = {};
         this.imgs = imgContext.keys().reduce( (icons, file) => {
             const cname = imgContext(file);
@@ -41,14 +41,13 @@ render(){
 //        );
 //   }
 
-    const tabData = this.txtData2().data;
-    const items = tabData.map( (item) => (
+    const tabData=this.txtData2().data;
+    const items = tabData.map((item)=>(
         <div id={`"div${item.id}"`} className="contentsFlex">
-            <img className="contentsFlexImg" src={this.imgs[item.img]} alt=""/>
+            <img className="contentsFlexImg" src={this.imgs[item.img]} alt=" " height={300}/>
             <p className="contentsFlexTxt">{item.text}</p>
         </div>
     ));
-
     return (
             <div className='contentsDivClass'>
                 {items}
@@ -58,6 +57,5 @@ render(){
         )
     }
 }
-
 
 export default CContents;
