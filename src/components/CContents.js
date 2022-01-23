@@ -30,20 +30,28 @@ class CContents extends Component{
 
 
 render(){
-    const items=[];
-    for(let i=0; i<this.txtData().count; i++){
-        let value = this.txtData().text[i];
-        items.push(
-            <div className="contentsFlex">
-                <img className="contentsFlexImg" src={this.imgs['img'+(i+1)]} alt=""/>
-                <p className="contentsFlexTxt">{value}</p>
-            </div>
-        );
-    }
+//   const items=[];
+//   for(let i=0; i<this.txtData().count; i++){
+//       let value = this.txtData().text[i];
+//       items.push(
+//            <div className="contentsFlex">
+//                <img className="contentsFlexImg" src={this.imgs['img'+(i+1)]} alt=""/>
+//                <p className="contentsFlexTxt">{value}</p>
+//            </div>
+//        );
+//   }
+
+    const tabData = this.txtData2().data;
+    const items = tabData.map( (item) => (
+        <div id={`"div${item.id}"`} className="contentsFlex">
+            <img className="contentsFlexImg" src={this.imgs[item.img]} alt=""/>
+            <p className="contentsFlexTxt">{item.text}</p>
+        </div>
+    ));
 
     return (
             <div className='contentsDivClass'>
-                {/*{items}*/}
+                {items}
                 <h1>{this.state.msg}</h1>
                 <button onClick={this.changeMsg}>Kliknij, aby poznać tajemnicę</button>
             </div>
