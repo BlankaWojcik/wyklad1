@@ -22,7 +22,7 @@ export const CFooter = (props) => {
             <h5>
                 PPFront-end, przykładowy serwis React. Dzisiaj mamy: {date.toDateString()}
                 <br/>
-                Stan pogody: {props.weather}, temperatura: {props.temp}.
+                Stan pogody: {weather}, temperatura: {temp}.
                 <br/>
                 {children}
             </h5>
