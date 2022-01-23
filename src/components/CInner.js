@@ -19,8 +19,19 @@ export default class CInner extends Component {
         console.log("CInner - render()")
         return (
             <div>
-                <h3>Komponent wewnętrzny</h3>
+                <h3 className='bgClassInner'>Komponent wewnętrzny</h3>
             </div>
         )
+    }
+    shouldComponentUpdate(){
+        console.log("CInner - shouldComponentUpdate()")
+        return true
+    }
+    getSnapshotBeforeUpdate(pprops, pstate){
+        console.log("CInner - getSnapshotBeforeUpdate()")
+        return null
+    }
+    componentDidUpdate(){
+        console.log("CInner - componentDidUpdate()")
     }
 }

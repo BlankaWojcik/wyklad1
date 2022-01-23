@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import CInner from './CInner'
-
+import './COuter.css'
+import styl from './COuter.module.css'
 export default class COuter extends Component {
     constructor(props) {
         super(props)
@@ -19,8 +20,8 @@ export default class COuter extends Component {
     render() {
         console.log("COuter - render()")
         return (
-            <div>
-                <h2>Komponent zewnętrzny</h2>
+            <div className='bgClassNormal'>
+                <h2 className={styl.bgClassModule}>Komponent zewnętrzny</h2>
                 <button onClick={this.stateChange}>Zmiana stanu</button>
                 <CInner/>
             </div>
@@ -29,7 +30,17 @@ export default class COuter extends Component {
     stateChange = () => {
         this.setState({st:"Klik"})
     }
-
+    shouldComponentUpdate(){
+        console.log("COuter - shouldComponentUpdate()")
+        return true
+    }
+    getSnapshotBeforeUpdate(pprops, pstate){
+        console.log("COuter - getSnapshotBeforeUpdate()")
+        return null
+    }
+    componentDidUpdate(){
+        console.log("COuter - componentDidUpdate()")
+    }
 
 
 }
