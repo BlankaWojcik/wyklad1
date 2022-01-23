@@ -6,19 +6,20 @@ class CContents extends Component{
         this.state= {msg: 'Witaj użytkowniku. Kliknij przycisk, aby poznać wiadomość'}
     }
 
-
+    changeMsg(){
+        this.setState({msg: 'Właśnie jesteś uczestnikiem kursu React, gratulacje!'});
+    }
 
 
 
 render(){
     return (
-        <div>
-            <h1>
-                {this.state.msg}
-            </h1>
-        </div>
-    )
-}
+            <div>
+                <h1>{this.state.msg}</h1>
+                <button onClick={()=>this.changeMsg()}>Kliknij, aby poznać tajemnicę</button>
+            </div>
+        )
+    }
 }
 
 export default CContents;
