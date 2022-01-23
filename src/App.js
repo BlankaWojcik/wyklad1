@@ -6,8 +6,12 @@ import CHeader from './components/CHeader'
 function App() {
   return (
     <div className="App">
-      <CHeader/>
+      <CHeader aName="Jan" aFamily="Kowalski"/>
+      <CHeader aName="Tomasz" aFamily="Nowak"/>
+
       <CFooter weather="słoneczna" temp="25"/>
+      <CFooter weather="deszczowa" temp="13"/>
+      <CFooter weather="śnieżna" temp="-6"/>
     </div>
   );
 }
