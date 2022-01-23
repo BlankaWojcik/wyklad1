@@ -7,7 +7,7 @@ import CContents from './components/CContents'
 function App() {
   return (
     <div className="App">
-      <CHeader aName="Jan" aFamily="Kowalski"/>
+      <CHeader aName="Blanka" aFamily="Wójcik"/>
       {/* <CHeader aName="Tomasz" aFamily="Nowak"/> */}
       <CContents/>
       <CFooter weather="słoneczna" temp="25">

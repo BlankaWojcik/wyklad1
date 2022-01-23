@@ -14,6 +14,8 @@ import './CFooter.css';
 //}
 
 export const CFooter = (props) => {
+    const {weather, temp, children} = props;
+
     let date = new Date();
     return (
         <div>
@@ -22,7 +24,7 @@ export const CFooter = (props) => {
                 <br/>
                 Stan pogody: {props.weather}, temperatura: {props.temp}.
                 <br/>
-                {props.children}
+                {children}
             </h5>
         </div>
     );
