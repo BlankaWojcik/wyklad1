@@ -25,7 +25,7 @@ class RasyC extends Component {
         <div className="Rasa1">
           <h2>Koń arabski</h2>
           <img src={arabski} alt=""></img>
-          <h3> zastosowanie onMouseMove (tekst znika)</h3>
+          <h3> Tutaj zastosowanie onMouseMove (tekst znika)</h3>
           <p
             id="ras1"
             style={{ display: this.state.display }}
@@ -43,7 +43,7 @@ class RasyC extends Component {
         <div className="Rasa2">
           <h2>Koń fryzyjski</h2>
           <img src={fryzyjski} alt=""></img>
-          <h3> zastosowanie onMouseUp</h3>
+          <h3> Tutaj zastosowanie onMouseUp</h3>
           <p
             id="ras2"
             style={{ display: this.state.display }}
@@ -63,7 +63,7 @@ class RasyC extends Component {
         <div className="Rasa3">
           <h2>Koń huculski</h2>
           <img src={huculski} alt=""></img>
-          <h3> zastosowanie onMouseDown </h3>
+          <h3> Tutaj zastosowanie onMouseDown </h3>
           <p
             id="ras3"
             style={{ display: this.state.display }}
