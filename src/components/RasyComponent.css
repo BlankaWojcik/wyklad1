@@ -3,14 +3,16 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
   .Kontent img {
-    width: 100%;
+    /*width: 100%;*/
+    width: 70%;
+    height: 60%;
   }
   .Kontent p {
     width: 100%;
     margin-top: 20px;
   }
   
-  
+
   h2 {
     padding: 15px;
   }
