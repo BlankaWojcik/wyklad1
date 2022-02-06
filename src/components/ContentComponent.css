@@ -1,6 +1,7 @@
 .zdjecia_konikow1 {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(255, 204, 255);
   }
   
   .zdjecia_konikow1 img {
