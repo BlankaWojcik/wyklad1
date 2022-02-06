@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <div className="HeaderContainer">
         <a id="logoLink" href="/">
-          <h1>Strona o konikach naszych kochanych</h1>
+          <h1>Strona o konikach naszych pięknych kochanych</h1>
           <img src={koń} className="headerLogo" alt="logo" />
         </a>
       </div>
