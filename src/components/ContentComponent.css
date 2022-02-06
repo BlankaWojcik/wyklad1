@@ -15,7 +15,7 @@
   
   @media screen and (max-width: 1024px) {
     .zdjecia_konikow1 {
-      display: none;
+      /*display: none;*/
       flex-direction: column;
     }
   }
