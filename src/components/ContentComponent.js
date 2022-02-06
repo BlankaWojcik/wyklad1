@@ -59,7 +59,7 @@ class Content extends Component {
           <input onKeyPress={() => this.zmianaTekstu4()} />
         </form>
         <br></br>
-        <h3>{this.state.tekst}, inne zdarzenia są np w zakładce "Rasy"</h3>
+        <h3>{this.state.tekst}, inne zdarzenia są np w zakładce "Rasy", więc zapraszam</h3>
         <h2>Strona poświęcona konikom oraz ich pielęgnacji</h2>
         <div className="zdjecia_konikow1">
           <img src={konik1} id="konik1" alt=""></img>
