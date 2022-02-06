@@ -14,7 +14,7 @@
   }
   
   @media screen and (max-width: 1024px) {
-    #konik3 {
+    .zdjecia_konikow1 {
       display: none;
       flex-direction: column;
     }
