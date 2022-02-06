@@ -34,9 +34,9 @@ class StadninyC extends Component {
             <li>http://www.nielepice.com.pl/pl/</li>
           </ul>
 
-          <h3>Ostatnie wydarzenie #10 </h3>
+          <h3> Ostatnie zastosowane wydarzenie: </h3>
           <form>
-            <label>#10 onKeyPress:</label>
+            <label> onKeyPress:</label>
             <input onKeyPress={this.kolor()}></input>
           </form>
         </div>
