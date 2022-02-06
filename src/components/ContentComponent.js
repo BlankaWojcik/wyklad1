@@ -23,19 +23,19 @@ class Content extends Component {
   };
 
   zmianaTekstu1() {
-    this.setState2({ tekst: "To było onCopy" });
+    this.setState({ tekst: "To było onCopy" });
   }
   zmianaTekstu2() {
-    this.setState2({ tekst: "To było onMouseLeave" });
+    this.setState({ tekst: "To było onMouseLeave" });
   }
   zmianaTekstu3() {
-    this.setState2({ tekst: "To było onInput" });
+    this.setState({ tekst: "To było onInput" });
   }
   zmianaTekstu4() {
-    this.setState2({ tekst: "To było onCut" });
+    this.setState({ tekst: "To było onCut" });
   }
   zmianaTekstu5() {
-    this.setState2({ tekst2: "To było onMouseMove" });
+    this.setState({ tekst2: "To było onMouseMove" });
   }
 
   render() {
