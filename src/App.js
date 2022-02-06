@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 //import {CFooter} from './components/CFooter'
 //import CHeader from './components/CHeader'
@@ -6,7 +5,7 @@ import './App.css';
 //import COuter from './components/COuter'
 
 import React from "react";
-
+import logo from "./logo.svg";
 import { Component } from "react";
 import HeaderComponent from "./components/HeaderComponent";
 import Navbar from "./components/NavbarComponent";
