@@ -23,11 +23,11 @@ a {
     text-decoration: none;
     color: rgb(0, 0, 0);
   }
-@media (prefers-reduced-motion: no-preference) {
+/*@media (prefers-reduced-motion: no-preference) {
     .headerLogo {
         animation: App-logo-spin infinite 20s linear;
     }
-}
+}*/
 
 
 
