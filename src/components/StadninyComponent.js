@@ -34,8 +34,6 @@ class StadninyC extends Component {
             <li>http://www.nielepice.com.pl/pl/</li>
           </ul>
 
-          
-
         </div>
         <div className="prawyPanel">
           <h2>Jak wybrać dobrego pierwszego konia?</h2>
@@ -47,3 +45,4 @@ class StadninyC extends Component {
 }
 
 export default StadninyC;
+
