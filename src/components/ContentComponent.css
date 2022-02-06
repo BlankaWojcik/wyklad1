@@ -18,9 +18,9 @@
       /*display: none;*/
       flex-direction: column;
     }
-    #konik3 {
+    /*#konik3 {
       display: none;
-    }
+    }*/
   }
   
   @media screen and (max-width: 600px) {
