@@ -11,9 +11,9 @@ class Content extends Component {
       backgroundColor: "",
       tekst: "To jest tekst, który będzie sie zmieniał",
     };
-    this.state2 = {
+    /*this.state2 = {
       tekst2: "drugi tekst do zmiany",
-    };
+    };*/
   }
 
   boxClick = (e) => {
@@ -46,6 +46,7 @@ class Content extends Component {
       >
         <button onClick={this.boxClick}>OnClick</button>
         <button onDoubleClick={this.boxClick}>OnDoubleClick</button>
+
         <button onCopy={() => this.zmianaTekstu1()}>OnCopy</button>
         <button onMouseLeave={() => this.zmianaTekstu2()}>OnMouseLeave</button>
         <form>
@@ -59,7 +60,7 @@ class Content extends Component {
           <input onKeyPress={() => this.zmianaTekstu5()} />
         </form>
         <br></br>
-        <h3>{this.state.tekst}, inne zdarzenia są np w zakładce "Rasy", więc zapraszam</h3>
+        <h3>{this.state.tekst}, inne zdarzenia są np. w zakładce "Rasy", więc zapraszam serdecznie</h3>
         <h2>Strona poświęcona konikom oraz ich pielęgnacji</h2>
         <div className="zdjecia_konikow1">
           <img src={konik1} id="konik1" alt=""></img>
