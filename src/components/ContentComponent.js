@@ -49,13 +49,13 @@ class Content extends Component {
         <button onCopy={() => this.zmianaTekstu1()}>#3 OnCopy</button>
         <button onMouseLeave={() => this.zmianaTekstu2()}>#4 onMouseLeave</button>
         <form>
-          <label>#5 onInput: </label>
+          <label>Tutaj zastosowanie onInput: </label>
           <input onInput={() => this.zmianaTekstu3()} />
           <br></br>
-          <label>#6 onCut:</label>
+          <label>Tutaj zastosowanie onCut: </label>
           <input onCut={() => this.zmianaTekstu4()} />
           <br></br>
-          <label>#7 onKeyPress</label>
+          <label>Tutaj zastosowanie onKeyPress: </label>
           <input onKeyPress={() => this.zmianaTekstu4()} />
         </form>
         <br></br>
