@@ -16,6 +16,7 @@
   @media screen and (max-width: 1024px) {
     #konik3 {
       display: none;
+      flex-direction: column;
     }
   }
   
