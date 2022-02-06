@@ -12,8 +12,8 @@ a {
   }
 
 .headerLogo{
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
 }
 .headerContainer h2{
     flex-grow: 1;
