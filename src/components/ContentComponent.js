@@ -44,22 +44,22 @@ class Content extends Component {
         className="Bg"
         style={{ backgroundColor: this.state.backgroundColor }}
       >
-        <button onClick={this.boxClick}>#1 OnClick</button>
-        <button onDoubleClick={this.boxClick}>#2 onDoubleClick</button>
-        <button onCopy={() => this.zmianaTekstu1()}>#3 OnCopy</button>
-        <button onMouseLeave={() => this.zmianaTekstu2()}>#4 onMouseLeave</button>
+        <button onClick={this.boxClick}>OnClick</button>
+        <button onDoubleClick={this.boxClick}>OnDoubleClick</button>
+        <button onCopy={() => this.zmianaTekstu1()}>OnCopy</button>
+        <button onMouseLeave={() => this.zmianaTekstu2()}>OnMouseLeave</button>
         <form>
-          <label>Tutaj zastosowanie onInput: </label>
+          <label>Tutaj zastosowanie OnInput: </label>
           <input onInput={() => this.zmianaTekstu3()} />
           <br></br>
-          <label>Tutaj zastosowanie onCut: </label>
+          <label>Tutaj zastosowanie OnCut: </label>
           <input onCut={() => this.zmianaTekstu4()} />
           <br></br>
-          <label>Tutaj zastosowanie onKeyPress: </label>
+          <label>Tutaj zastosowanie OnKeyPress: </label>
           <input onKeyPress={() => this.zmianaTekstu4()} />
         </form>
         <br></br>
-        <h3>{this.state.tekst}, wiecej zdarzeń bedzie na innych podstronkach</h3>
+        <h3>{this.state.tekst}, inne zdarzenia są np w zakładce "Rasy"</h3>
         <h2>Strona poświęcona konikom oraz ich pielęgnacji</h2>
         <div className="zdjecia_konikow1">
           <img src={konik1} id="konik1" alt=""></img>
