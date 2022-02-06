@@ -15,7 +15,7 @@ class Navbar extends Component {
                 Rasy
               </a>
               <a className="nav-link" href="/Stadniny">
-                Polecane Stadniny
+                Stadniny
               </a>
               <a className="nav-link" href="/Opieka">
                 Opieka
