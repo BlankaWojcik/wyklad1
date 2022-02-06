@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./OpiekaComponent.css";
 import końzdrowie from "../res/końzdrowie.jpg";
 import końkarmienie from "../res/końkarmienie.jpg";
