@@ -35,7 +35,7 @@ class Content extends Component {
     this.setState({ tekst: "To było onCut" });
   }
   zmianaTekstu5() {
-    this.setState({ tekst2: "To było onKeyPress" });
+    this.setState({ tekst: "To było onKeyPress" });
   }
 
   render() {
