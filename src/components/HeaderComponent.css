@@ -1,0 +1,40 @@
+.HeaderContainer{
+    background-color: honeydew;
+    color: rgb(240, 172, 172);
+    padding: 15px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+a {
+    display: flex;
+  }
+
+.headerLogo{
+    width: 32px;
+    height: 32px;
+}
+.headerContainer h2{
+    flex-grow: 1;
+}
+
+#logoLink {
+    text-decoration: none;
+    color: white;
+  }
+@media (prefers-reduced-motion: no-preference) {
+    .headerLogo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
