@@ -36,7 +36,7 @@ class StadninyC extends Component {
 
         </div>
         <div className="prawyPanel">
-          <h2>Jak wybrać dobrego pierwszego konia?</h2>
+          <h2>Jak wybrać odpowiedniego pierwszego konika?</h2>
           <VideoYT />
         </div>
       </div>
