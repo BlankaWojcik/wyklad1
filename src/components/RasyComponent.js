@@ -25,7 +25,7 @@ class RasyC extends Component {
         <div className="Rasa1">
           <h2>Koń arabski</h2>
           <img src={arabski} alt=""></img>
-          <h3> Tutaj zastosowanie onMouseMove (tekst znika)</h3>
+          <h3> Tutaj zastosowanie onMouseMove (tekst znika, takie bajery)</h3>
           <p
             id="ras1"
             style={{ display: this.state.display }}
