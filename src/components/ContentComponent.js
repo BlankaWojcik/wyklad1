@@ -35,7 +35,7 @@ class Content extends Component {
     this.setState({ tekst: "To było onCut" });
   }
   zmianaTekstu5() {
-    this.setState({ tekst2: "To było onMouseMove" });
+    this.setState({ tekst2: "To było onKeyPress" });
   }
 
   render() {
@@ -56,7 +56,7 @@ class Content extends Component {
           <input onCut={() => this.zmianaTekstu4()} />
           <br></br>
           <label>Tutaj zastosowanie OnKeyPress: </label>
-          <input onKeyPress={() => this.zmianaTekstu4()} />
+          <input onKeyPress={() => this.zmianaTekstu5()} />
         </form>
         <br></br>
         <h3>{this.state.tekst}, inne zdarzenia są np w zakładce "Rasy", więc zapraszam</h3>
