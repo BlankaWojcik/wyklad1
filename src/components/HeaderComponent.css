@@ -21,7 +21,7 @@ a {
 
 #logoLink {
     text-decoration: none;
-    color: white;
+    color: rgb(8, 8, 8);
   }
 @media (prefers-reduced-motion: no-preference) {
     .headerLogo {
