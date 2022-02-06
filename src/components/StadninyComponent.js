@@ -34,11 +34,8 @@ class StadninyC extends Component {
             <li>http://www.nielepice.com.pl/pl/</li>
           </ul>
 
-          <h3> Ostatnie zastosowane wydarzenie: </h3>
-          <form>
-            <label> onKeyPress:</label>
-            <input onKeyPress={this.kolor()}></input>
-          </form>
+          
+
         </div>
         <div className="prawyPanel">
           <h2>Jak wybrać dobrego pierwszego konia?</h2>
