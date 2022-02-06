@@ -1,61 +1,74 @@
-//import { render } from '@testing-library/react';
-import React, {Component} from 'react';
-import './CContents.css'
-import jsonData from '../res/text.json'
-import jsonData2 from '../res/text2.json'
+import React, { Component, /*useRef*/ } from "react";
+import konik1 from "../res/konik_1.jpg";
+import konik2 from "../res/konik_2.jpg";
+import konik3 from "../res/konik_3.jpg";
 
-class CContents extends Component{
+import "./ContentComponent.css";
+class Content extends Component {
+  constructor() {
+    super();
+    this.state = {
+      backgroundColor: "",
+      tekst: "To jest tekst, który będzie sie zmieniał",
+    };
+    this.state2 = {
+      tekst2: "drugi tekst do zmiany",
+    };
+  }
 
-    constructor(){
-        super()
-        this.state= {msg: 'Witaj użytkowniku. Kliknij przycisk, aby poznać wiadomość'}
-        this.txtData = () => JSON.parse(JSON.stringify(jsonData));
-        this.txtData2 = () => JSON.parse(JSON.stringify(jsonData2));
-        const imgContext = require.context('../res/', false, /\.jpg$/);
-        let img = {};
-        this.imgs = imgContext.keys().reduce( (icons, file) => {
-            const cname = imgContext(file);
-            const label = file.slice(2, -4);
-            img[label]= cname;
-            return img;
-        }, {});
-        //this.changeMsg = this.changeMsg.bind(this);
-    }
+  boxClick = (e) => {
+    this.setState({
+      backgroundColor: "red",
+    });
+  };
 
-    changeMsg = () =>{
-       this.setState({msg: 'Właśnie jesteś uczestnikiem kursu React, gratulacje!'});
-       console.log('Przycisk został naciśnięty');
-    }
+  zmianaTekstu1() {
+    this.setState({ tekst: "To było onCopy" });
+  }
+  zmianaTekstu2() {
+    this.setState({ tekst: "To było onMouseLeave" });
+  }
+  zmianaTekstu3() {
+    this.setState({ tekst: "To było onInput" });
+  }
+  zmianaTekstu4() {
+    this.setState({ tekst: "To było onCut" });
+  }
+  zmianaTekstu5() {
+    this.setState2({ tekst2: "To było onMouseMove" });
+  }
 
-
-
-render(){
-//   const items=[];
-//   for(let i=0; i<this.txtData().count; i++){
-//       let value = this.txtData().text[i];
-//       items.push(
-//            <div className="contentsFlex">
-//                <img className="contentsFlexImg" src={this.imgs['img'+(i+1)]} alt=""/>
-//                <p className="contentsFlexTxt">{value}</p>
-//            </div>
-//        );
-//   }
-
-    const tabData=this.txtData2().data;
-    const items = tabData.map((item)=>(
-        <div id={`"div${item.id}"`} className="contentsFlex">
-            <img className="contentsFlexImg" src={this.imgs[item.img]} alt=" " height={300}/>
-            <p className="contentsFlexTxt">{item.text}</p>
-        </div>
-    ));
+  render() {
     return (
-            <div className='contentsDivClass'>
-                {items}
-                <h1>{this.state.msg}</h1>
-                <button onClick={this.changeMsg}>Kliknij, aby poznać tajemnicę</button>
-            </div>
-        )
-    }
+      <div
+        className="Bg"
+        style={{ backgroundColor: this.state.backgroundColor }}
+      >
+        <button onClick={this.boxClick}>#1 OnClick</button>
+        <button onDoubleClick={this.boxClick}>#2 onDoubleClick</button>
+        <button onCopy={() => this.zmianaTekstu1()}>#3 OnCopy</button>
+        <button onMouseLeave={() => this.zmianaTekstu2()}>#4 onMouseLeave</button>
+        <form>
+          <label>#5 onInput: </label>
+          <input onInput={() => this.zmianaTekstu3()} />
+          <br></br>
+          <label>#6 onCut:</label>
+          <input onCut={() => this.zmianaTekstu4()} />
+          <br></br>
+          <label>#7 onKeyPress</label>
+          <input onKeyPress={() => this.zmianaTekstu4()} />
+        </form>
+        <br></br>
+        <h3>{this.state.tekst}, wiecej zdarzeń bedzie na innych podstronach</h3>
+        <h2>Strona poświęcona konikom oraz ich pielęgnacji</h2>
+        <div className="zdjecia_konikow1">
+          <img src={konik1} id="konik1" alt=""></img>
+          <img src={konik2} id="konik2" alt=""></img>
+          <img src={konik3} id="konik3" alt=""></img>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default CContents;
+export default Content;

@@ -1,6 +1,30 @@
-.contentsFlexTxt{
-    color:black;
-}
-.contentsDivClass{
-    background-color: rgb(212, 106, 195);
-}
+.zdjecia_konikow1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .zdjecia_konikow1 img {
+    width: 90%;
+    border: 10px solid transparent;
+    padding: 15px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    #konik1 {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .zdjecia_konikow1 {
+      display: flex;
+      flex-direction: column;
+    }
+    #konik3 {
+      display: block;
+    }
+  }
