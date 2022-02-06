@@ -18,7 +18,7 @@ class Content extends Component {
 
   boxClick = (e) => {
     this.setState({
-      backgroundColor: "rose_pink",
+      backgroundColor: "pink",
     });
   };
 
